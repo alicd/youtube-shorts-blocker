@@ -6,7 +6,7 @@ function removeShorts() {
   if (currentUrl.includes("youtube.com/shorts/")) {
     history.back();
   }
-  document.querySelectorAll(['ytd-rich-section-renderer', 'grid-shelf-view-model']).forEach(el => {
+  document.querySelectorAll(['ytd-rich-section-renderer', 'grid-shelf-view-model', 'ytd-reel-shelf-renderer']).forEach(el => {
     if (el.innerText.includes('Shorts')) {
       el.remove();
     }
